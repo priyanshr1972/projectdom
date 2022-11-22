@@ -1,7 +1,5 @@
-
-
 //                                                   Add or Delete               ***IMP 
-var form=document.getElementById('addForm');
+var form=document.getElementById('adform');
 var itemList=document.getElementById('items');
 form.addEventListener('submit',addEvent)
 itemList.addEventListener('click',removeEvent);
