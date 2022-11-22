@@ -20,8 +20,8 @@ body{
 }
 input[type="radio"]{
     appearance: none;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.rem;
+    width: 1.6rem;
     border: 2px solid black;
     border-radius: 50%;
     /* offset: 1rem;
@@ -63,7 +63,7 @@ input[type="radio"]:checked{
 #main-header{
     height: 6rem;
 }
-.form-control1{
+.fcontrol1{
     margin: 5px;
     text-decoration-style: dotted;
     color: chartreuse;
