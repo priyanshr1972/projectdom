@@ -1,10 +1,12 @@
 
 
 //                                                   Add or Delete               ***IMP 
+
 var form=document.getElementById('addForm');
 var itemList=document.getElementById('items');
 form.addEventListener('submit',addEvent)
 itemList.addEventListener('click',removeEvent);
+
 function addEvent(e){
     e.preventDefault();
     var item=document.getElementById('item').value;
@@ -26,6 +28,24 @@ function removeEvent(e){
             var li=e.target.parentElement;
             // console.log(li)
             itemList.removeChild(li);
+        }
+    }
+}
+// Search todo function
+function myFunction() {
+    var input, filter, ul, li, a, i, textValue;
+    input = document.getElementById('filter');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById('items');
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        textValue = li[i].textContent || li[i].innerText;
+        console.log(textValue);
+        if (textValue.toUpperCase().includes(filter)) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
         }
     }
 }
